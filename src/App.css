@@ -47,25 +47,54 @@ table {
 	border-spacing: 0;
 }
 
-* {
-  border: 1px solid red;
-  box-sizing: border-box;
-}
 
-div {
-  border: 1px solid red;
+
+/* MY STYLING: */ 
+
+* {
+  box-sizing: border-box;
 }
 
 
 .App {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 
-.joke {
-  margin: 20vh 0;
-  display:felx;
-  align-items:center;
+.joke-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
 
+.dynamic-joke {
+  height: 20vh;
+  margin: 20vh 0;
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  font-family: 'Comfortaa', cursive;
+}
+
+.setup {
+  margin: 2rem 0;
+}
+
+.punchline {
+  margin: 2rem 0;
+
+}
+
+.dynamic-joke button {
+  font-family: 'Arial', sans-serif;
+  border-radius: 10px;
+  margin: 1rem;
+  width: 20%;
+}
+
+div {
+  /* border: 1px solid red; */
+  border: none;
 }

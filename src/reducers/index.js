@@ -11,10 +11,21 @@ const initialState = {
 
 export const reducer = (state = initialState, action) => {
     switch(action.type) {
+        case FETCH_JOKE: 
+            return {
+                ...state
+            }
+        case FETCH_JOKE_SUCCESS:
+            return {
+                ...state,
+                setup: action.payload.setup,
+                punchline: action.payload.punchline,
+                id: action.payload.id
+            }
         case SHOW_PUNCHLINE:
             return {
                 ...state,
-                showingPunchline: true,
+                showingPunchline: action.payload,
             }
         default:
             return state;
