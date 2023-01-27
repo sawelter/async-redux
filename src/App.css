@@ -59,7 +59,7 @@ table {
 
 
 .App {
-  background-color: #06d6a0;
+  background-color: #118ab2;
 }
 
 .joke-app {
@@ -88,8 +88,9 @@ table {
   padding: 0 5%;
   background-color: #ef476f;
   color: #FAF9F6;
-  border: 5px solid white;
+  /* border: 5px solid white; */
   border-radius: 20px;
+  box-shadow: 5px 5px 10px black;
 }
 
 .setup {
@@ -120,14 +121,27 @@ table {
 
 
 button {
+  /* POSITION */
   position: absolute;
   margin: 2rem;
   bottom: 10rem;
-  padding: 0.5rem 1rem;
-  font-family: sans-serif;
-  font-size: 1.5rem;
-  font-style: italic;
+
+  /* FONT */
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.4rem;
+  font-weight: bold;
+
+
+  /* CONTAINER */
+  padding: 1rem 1rem;
+  padding-bottom: 0.8rem;
   border-radius: 10px;
+  background-color: #ef476f;
+  border: 3px solid white;
+  /* box-shadow: 5px 5px 10px black; */
 }
 
 div {
@@ -156,6 +170,4 @@ div {
   button {
 
   }
-
-
 }
