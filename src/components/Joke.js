@@ -11,13 +11,17 @@ const Joke = (props) => {
     }
 
     return (
-        <div className="joke-app" id={1}>
-            <div className="dynamic-joke">
-                <div className="joke">
-                    <div className="setup">{props.setup}</div>
-                    <div className="punchline">{props.showingPunchline ? props.punchline : ""}</div>
+        <div className="joke-app">
+            <div className="joke" id={1}>
+                <div className="setup">{props.setup}</div>
+                <div className="punchline">
+                    {props.showingPunchline 
+                        ? 
+                        props.punchline 
+                        : 
+                        <span className="show-punchline" onClick={() => props.showPunchline(true)}>Show punchline...</span>
+                    }
                 </div>
-                <button onClick={() => props.showPunchline(true)}>Show punchline</button>
             </div>
             <button onClick={() => props.fetchJoke()}>New Joke</button>
         </div>
